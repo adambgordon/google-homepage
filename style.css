@@ -77,7 +77,6 @@ input[type="text"] {
     font-size: 16px;
 }
 
-
 #input-bar {
     width: 500px;
     border-color: transparent;
@@ -94,4 +93,64 @@ input[type="text"] {
     height: 28px;
     align-self: center;
     cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.buttons button {
+    margin: 0px 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-color: transparent;
+    color: rgb(64,64,64);
+    background-color: rgb(249,249,249);
+    border-radius: 4px;
+}
+
+.buttons button:hover {
+    border: 1px solid;
+    border-color: rgb(225,225,225);
+    box-shadow: 0 1.5px 2px -0.5px rgb(225,225,225);
+}
+
+#leaf {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.bottomnav {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    background-color:rgb(242,242,242);
+    padding-left: 20px;
+    padding-top: 1px;
+}
+
+.bottomnav a {
+    font-size: inherit;
+    padding: 15px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgb(117,117,117);
+}
+
+.bottomnav-center {
+    position: absolute;
+    left: 50%;
+    bottom: 12px;
+    transform: translate(-50%,0%);
+}
+
+.bottomnav-right {
+    display: flex;
+    margin: 0 40px 0 auto;
 }
