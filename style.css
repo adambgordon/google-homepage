@@ -47,20 +47,21 @@
     justify-content: space-between;
     width: 580px;
     height: 44px;
-    margin: 30px auto 0px;
+    margin: 30px auto 30px;
     border: 1px solid;
     border-color: rgb(225,225,225);
     border-radius: 22px;
     cursor: default;
 }
 
-/* Decreasing margin on hover from 30px to 29px
-to account for search bar expandning by 2px
+/* Decreasing margins on hover to account
+for search bar expandning by 2px
 vertically (1px up and 1px down) */
 #search-bar:hover {
     height: 46px;
     box-shadow: 0 1px 5px 1px rgb(225,225,225);
     margin-top: 29px;
+    margin-bottom: 29px;
 }
 
 #search-icon {
@@ -80,6 +81,7 @@ input[type="text"] {
     border-color: transparent;
     align-self: center;
 }
+
 #input-bar:focus {
     outline: none;
 }
@@ -96,7 +98,7 @@ input[type="text"] {
 .buttons {
     display: flex;
     justify-content: center;
-    margin: 30px auto;
+    margin: 0px auto;
 }
 
 .buttons button {
