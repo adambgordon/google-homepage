@@ -5,7 +5,7 @@
 }
 
 .topnav {
-    margin: 20px 0px;
+    padding: 20px 0px;
     font-size: 14px;
 }
 
@@ -16,6 +16,7 @@
     font-size: inherit;
     text-decoration: none;
     color: rgb(34,34,34);
+    top: 5px;
 }
 
 .topnav a:hover {
@@ -28,10 +29,16 @@
 }
 
 #apps-icon {
+    color: rgb(100,100,100);
+}
+
+#apps-icon:hover {
+    background-color: lightgray;
+    border-radius: 50%;
 }
 
 #search-bar{
-    display: block;
+    display: flex;
     width: 550px;
     height: 40px;
     margin: 20px auto 0px;
@@ -41,5 +48,13 @@
 }
 
 #search-bar:hover {
+    height: 42px;
     box-shadow: 0 1px 5px 1px rgb(225,225,225);
+}
+
+#search-icon {
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(160,160,160);
+    align-self: center;
 }
