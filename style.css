@@ -1,7 +1,8 @@
 .center-image {
     display: block;
-    max-width: 275px;
-    margin: 75px auto 0px;
+    max-width: 272px;
+    margin: 50px auto 0px;
+    cursor: default;
 }
 
 .topnav {
@@ -10,6 +11,9 @@
 }
 
 .topnav a {
+    float: left;
+    display: flex;
+    align-items: center;
     padding: 0px 10px;
     text-align: center;
     font-family: sans-serif;
@@ -23,38 +27,71 @@
     text-decoration: underline;
 }
 
+.underline:hover {
+    text-decoration: underline;
+}
+
 .topnav-right {
     float: right;
     font-size: 13px;
+    display: flex;
 }
 
 #apps-icon {
     color: rgb(100,100,100);
+    padding: 8px;
 }
 
 #apps-icon:hover {
-    background-color: lightgray;
+    background-color: rgb(240,240,240);
     border-radius: 50%;
 }
 
 #search-bar{
     display: flex;
-    width: 550px;
-    height: 40px;
+    justify-content: space-between;
+    width: 580px;
+    height: 44px;
     margin: 20px auto 0px;
     border: 1px solid;
     border-color: rgb(225,225,225);
-    border-radius: 20px;
+    border-radius: 22px;
+    cursor: default;
 }
 
 #search-bar:hover {
-    height: 42px;
+    height: 46px;
     box-shadow: 0 1px 5px 1px rgb(225,225,225);
+    margin-top: 19px;
 }
 
 #search-icon {
-    padding: 10px;
+    padding: 10px 15px;
     font-size: 20px;
     color: rgb(160,160,160);
     align-self: center;
+}
+
+input[type="text"] {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+
+#input-bar {
+    width: 500px;
+    border-color: transparent;
+    align-self: center;
+}
+#input-bar:focus {
+    outline: none;
+}
+
+#microphone {
+    float: right;
+    padding: 6px 15px;
+    width: 20px;
+    height: 28px;
+    align-self: center;
+    cursor: pointer;
 }
