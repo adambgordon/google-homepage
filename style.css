@@ -1,40 +1,35 @@
 .center-image {
     display: block;
     max-width: 272px;
-    margin: 50px auto 0px;
+    margin: 55px auto 0px;
     cursor: default;
 }
 
 .topnav {
-    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
     font-size: 14px;
+    margin: 0px 10px;
 }
 
 .topnav a {
-    float: left;
     display: flex;
     align-items: center;
     padding: 0px 10px;
-    text-align: center;
     font-family: sans-serif;
     font-size: inherit;
     text-decoration: none;
     color: rgb(34,34,34);
-    top: 5px;
 }
 
 .topnav a:hover {
     text-decoration: underline;
 }
 
-.underline:hover {
-    text-decoration: underline;
-}
-
 .topnav-right {
-    float: right;
-    font-size: 13px;
     display: flex;
+    font-size: 13px;
+    margin: 0 -30px 0 auto;
 }
 
 #apps-icon {
@@ -52,17 +47,20 @@
     justify-content: space-between;
     width: 580px;
     height: 44px;
-    margin: 20px auto 0px;
+    margin: 30px auto 0px;
     border: 1px solid;
     border-color: rgb(225,225,225);
     border-radius: 22px;
     cursor: default;
 }
 
+/* Decreasing margin on hover from 30px to 29px
+to account for search bar expandning by 2px
+vertically (1px up and 1px down) */
 #search-bar:hover {
     height: 46px;
     box-shadow: 0 1px 5px 1px rgb(225,225,225);
-    margin-top: 19px;
+    margin-top: 29px;
 }
 
 #search-icon {
@@ -88,7 +86,7 @@ input[type="text"] {
 
 #microphone {
     float: right;
-    padding: 6px 15px;
+    padding: 6px 20px;
     width: 20px;
     height: 28px;
     align-self: center;
@@ -105,7 +103,8 @@ input[type="text"] {
     margin: 0px 5px;
     padding: 8px 15px;
     font-size: 14px;
-    border-color: transparent;
+    border: 1px solid;
+    border-color: rgb(249,249,249);
     color: rgb(64,64,64);
     background-color: rgb(249,249,249);
     border-radius: 4px;
@@ -141,6 +140,10 @@ input[type="text"] {
     font-family: sans-serif;
     text-decoration: none;
     color: rgb(117,117,117);
+}
+
+.bottomnav a:hover {
+    text-decoration: underline;
 }
 
 .bottomnav-center {
